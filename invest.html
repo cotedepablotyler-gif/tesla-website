@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Investment Dashboard</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body{
+font-family:Arial;
+margin:0;
+background:#f4f4f4;
+text-align:center;
+}
+
+nav{
+background:white;
+padding:15px;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+nav a{
+margin:10px;
+text-decoration:none;
+color:black;
+font-weight:bold;
+}
+
+.card{
+background:white;
+max-width:500px;
+margin:50px auto;
+padding:30px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.big{
+font-size:40px;
+color:green;
+animation:fade 2s;
+}
+
+@keyframes fade{
+from{opacity:0;}
+to{opacity:1;}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="models.html">Cars</a>
+<a href="invest.html">Invest</a>
+</nav>
+
+<div class="card">
+<h2>Tesla Investment Dashboard</h2>
+<p class="big">$15,240</p>
+<p>Portfolio Value (Demo UI)</p>
+<button onclick="alert('This is a demo only')">Invest</button>
+</div>
+
+</body>
+</html>
