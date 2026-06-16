@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -25,10 +26,6 @@
         text-align:center;
     }
 
-    nav{
-        margin-top:10px;
-    }
-
     nav a{
         color:white;
         text-decoration:none;
@@ -48,3 +45,142 @@
 
     .hero-content{
         background:rgba(0,0,0,0.6);
+        padding:40px;
+        border-radius:15px;
+    }
+
+    .hero h1{
+        font-size:50px;
+        margin-bottom:10px;
+    }
+
+    .hero p{
+        font-size:18px;
+        margin-bottom:20px;
+    }
+
+    .btn{
+        display:inline-block;
+        background:#e82127;
+        color:white;
+        padding:12px 25px;
+        text-decoration:none;
+        border-radius:5px;
+    }
+
+    section{
+        padding:60px 20px;
+    }
+
+    .section-title{
+        text-align:center;
+        margin-bottom:40px;
+    }
+
+    .cars{
+        display:grid;
+        grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+        gap:20px;
+        max-width:1200px;
+        margin:auto;
+    }
+
+    .card{
+        background:white;
+        border-radius:15px;
+        overflow:hidden;
+        box-shadow:0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .card img{
+        width:100%;
+        height:220px;
+        object-fit:cover;
+    }
+
+    .card-content{
+        padding:20px;
+    }
+
+    footer{
+        background:#111;
+        color:white;
+        text-align:center;
+        padding:20px;
+        margin-top:40px;
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Tesla Cars Showcase</h1>
+    <nav>
+        <a href="#models">Models</a>
+        <a href="#about">About</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Experience Tesla Innovation</h1>
+        <p>Electric cars built for the future</p>
+        <a href="#models" class="btn">View Models</a>
+    </div>
+</section>
+
+<section id="models">
+    <h2 class="section-title">Tesla Models</h2>
+
+    <div class="cars">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1617788138017-80ad40651399" alt="Model S">
+            <div class="card-content">
+                <h3>Model S</h3>
+                <p>Luxury electric sedan with top performance and long range.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1619767886558-efdc259cde1a" alt="Model 3">
+            <div class="card-content">
+                <h3>Model 3</h3>
+                <p>Affordable electric car for everyday driving.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6" alt="Model X">
+            <div class="card-content">
+                <h3>Model X</h3>
+                <p>Spacious SUV with falcon wing doors.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1614204424926-196a80bf0be8" alt="Model Y">
+            <div class="card-content">
+                <h3>Model Y</h3>
+                <p>Compact SUV with great efficiency.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="about">
+    <h2 class="section-title">About This Site</h2>
+    <p style="max-width:800px;margin:auto;text-align:center;line-height:1.6;">
+        This is a Tesla-inspired educational website built using HTML and CSS for learning purposes.
+        It is not affiliated with Tesla Inc.
+    </p>
+</section>
+
+<footer>
+    <p>© 2026 Tesla Showcase Website</p>
+</footer>
+
+</body>
+</html>
